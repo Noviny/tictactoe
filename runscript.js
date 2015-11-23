@@ -14,13 +14,14 @@ var takeTurn = function (player, row, column) {
 	}
 };
 
-var playGame = function () {
-	while ( getWinner() === undefined ) {
-		randomTurn("Gog");
-		randomTurn("TaT");
-	}
-	return getWinner()
-}
+//The below function is no longer needed.
+// var playGame = function () {
+// 	while ( getWinner() === undefined ) {
+// 		randomTurn("Gog");
+// 		randomTurn("TaT");
+// 	}
+// 	return getWinner()
+// }
 
 var randomNum = function () {
 	var number = Math.ceil(Math.random()*3);
