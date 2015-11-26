@@ -1,7 +1,13 @@
+* {
+	box-sizing: border-box;
+}
+
 .square {
 	margin: 0;
-	padding: 50px;
+	height: 175px;
+	width: 175px;
 	border: 1px solid purple;
+	box-sizing: border-box;
 }
 
 .column {
