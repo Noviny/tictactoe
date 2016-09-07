@@ -28,6 +28,8 @@ var row = function (square) {
 }
 
 	$(".square").click( function () {
+		console.log('click has occurred');
+		console.log('our text', $(this).children("p").text());
 		if ( $(this).children("p").text() === "" ) {
 			$(this).children("p").text(currentTurn);
 			//The below tracks the info to the JS board
