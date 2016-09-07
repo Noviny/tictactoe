@@ -1,10 +1,7 @@
-console.log("ARCADIANDRE")
-
-
 $( document ).ready(function () {
-	
-var currentTurn = "GoG"
-var otherTurn = "TaT"
+
+var currentTurn = "X"
+var otherTurn = "O"
 
 var column = function (square) {
 	if ( $(square).attr('class').indexOf("d") >= 0 ) {
@@ -51,25 +48,3 @@ var row = function (square) {
 		}
 	})
 })
-
-//Next, the onclick square needs to go and talk to the runscript
-//Big challenge is *how* it actually tells the runscript a square
-
-//Currently it can use IDs, and check what ID it was handed
-//Then write to the correct square.
-//Is there a better method?
-
-
-//Can use classes 1, 2, 3 for columns,
-//While a, b, c for rows
-
-
-// ifs ( this.attr(class) includes a, b or c, convert to number
-// 	... as var, then plug to column)
-// ifs ( this.attr('class') inclues 1, 2, 3, just plug into row)
-
-
-//Fucking square and its 'a'
-
-
-// Firebase
