@@ -1,8 +1,8 @@
-console.log('GUI code loaded');
+console.log('GUI code loaded iterated');
 $( document ).ready(function () {
 var currentTurn = "X"
 var otherTurn = "O"
-
+	console.log('document ready');
 var column = function (square) {
 	if ( $(square).attr('class').indexOf("d") >= 0 ) {
 		return 1;
