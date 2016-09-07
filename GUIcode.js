@@ -1,5 +1,5 @@
+console.log('GUI code loaded');
 $( document ).ready(function () {
-
 var currentTurn = "X"
 var otherTurn = "O"
 
@@ -35,7 +35,6 @@ var row = function (square) {
 			var theColumn = column(this);
 			takeTurn ( currentTurn, theRow, theColumn )
 			//Check the winner
-			console.log ( getWinner() );
 			if ( getWinner() ) {
 				// console.log("working");
 				$("body").append("<p>Game is over. " + currentTurn + " won the game.</p>")
